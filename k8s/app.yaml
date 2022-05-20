@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: liatrio-simple-app
+  labels:
+    app: liatrio-simple-app
+spec:
+  replicas: 1
+  selector:
+    app: liatrio-simple-app
+  template:
+    metadata:
+      labels:
+        app: liatrio-simple-app
+    spec:
+      containers:
+      - name: liatrio-simple-app
+        image: liatrio-simple-app:latest
+        ports:
+        - containerPort: 5080

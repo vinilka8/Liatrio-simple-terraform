@@ -13,6 +13,7 @@ Steps to run Liatrio-simple-app on local using terraformation
 2. Build liatrio-simple-app docker image : docker build -t liatrio-simple-app .
 3. Verify build is successful and docker is present : docker images
 4. Go to Liatrio-simple-terraform cloned repo on your local : cd Liatrio-simple-terraform
+   4.1 Go to local-terraform folder : cd local-terraform
 5. Run : terraform init
 6. Run : terraform apply
 7. Go to browser and paste url, you should see the messages and timestam in JSON : http://localhost:5080
