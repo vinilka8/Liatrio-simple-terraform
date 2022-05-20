@@ -8,9 +8,9 @@ resource "aws_subnet" "public_1" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "public-ca-central-1a"
+    Name                        = "public-ca-central-1a"
     "kubernetes.io/cluster/eks" = "shared"
-    "kubernetes.io/role/elb = 1
+    "kubernetes.io/role/elb"    = 1
   }
 }
 
@@ -24,9 +24,9 @@ resource "aws_subnet" "public_2" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "public-ca-central-1b"
+    Name                        = "public-ca-central-1b"
     "kubernetes.io/cluster/eks" = "shared"
-    "kubernetes.io/role/elb = 1
+    "kubernetes.io/role/elb"    = 1
   }
 }
 
@@ -40,9 +40,9 @@ resource "aws_subnet" "private_1" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "private-ca-central-1a"
-    "kubernetes.io/cluster/eks" = "shared"
-    "kubernetes.io/role/internal-elb = 1
+    Name                              = "private-ca-central-1a"
+    "kubernetes.io/cluster/eks"       = "shared"
+    "kubernetes.io/role/internal-elb" = 1
   }
 }
 
@@ -56,8 +56,8 @@ resource "aws_subnet" "private_2" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "private-ca-central-1b"
-    "kubernetes.io/cluster/eks" = "shared"
-    "kubernetes.io/role/internal-elb = 1
+    Name                              = "private-ca-central-1b"
+    "kubernetes.io/cluster/eks"       = "shared"
+    "kubernetes.io/role/internal-elb" = 1
   }
 }
