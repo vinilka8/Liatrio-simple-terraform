@@ -3,8 +3,8 @@
 Prerequisitions:
 1. Installed terraform : https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started
 2. Ensure terraform cli is working as expected on your machine : terraform --version
-3. Cloned Liatrio-simple-app : git@github.com:vinilka8/Liatrio_simple_app.git
-4. Cloned Liatrio-simple-terraform : git@github.com:vinilka8/Liatrio-simple-terraform.git
+3. Cloned Liatrio-simple-app : git clone git@github.com:vinilka8/Liatrio_simple_app.git
+4. Cloned Liatrio-simple-terraform : git clone git@github.com:vinilka8/Liatrio-simple-terraform.git
 5. Installed docker : https://docs.docker.com/get-docker/
 6. Ensure docker cli is working as expected on your machine : docker --version
 
